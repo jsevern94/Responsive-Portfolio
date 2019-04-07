@@ -1,0 +1,262 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  vertical-align: middle;
+  line-height: 60px;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #777777;
+  text-align: center;
+  padding: 14px 8px;
+  text-decoration: none;
+}
+
+.navitem a:hover:not(.navitem) {
+  color: #4aaaa5;
+  transform: scale(1.1);
+}
+
+h1 {
+  float: left;
+  height: 100%;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 29px;
+  margin-top: 0px;
+}
+
+
+body {
+  margin: auto;
+  background-image: url("../images/crossline-dots/crossline-dots.png");
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #777777;
+  position: relative;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 960px;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #cccccc;
+  background-color: #ffffff;
+}
+
+#biopic {
+  float: left;
+  margin: 20px;
+  width: 20%;
+  margin-top: 0px;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+p {
+  font-size: 19px;
+  line-height: 2;
+  margin-left: 20px;
+}
+
+.icon {
+  height: 100%;
+  width: 100%;
+  float: left;
+}
+
+.icondiv {
+  position: relative;
+  height: 250px;
+  width: 300px;
+  margin: 10px;
+  margin-left: 25px;
+  float: left;
+}
+
+.imagelabel {
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  bottom: 5px;
+  color: #ffffff;
+  background-color: #4aaaa5;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #666666;
+  border-top: 4px solid #4aaaa5;
+  color: black;
+  text-align: center;
+}
+
+h2 {
+  color: #4aaaa5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 30px 0px 0px 20px;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  width: 95%;
+  margin: auto;
+  background-color: #cccccc;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.icondiv:hover {
+  outline: none !important;
+  border-color: #4aaaa5;
+  box-shadow: 0 0 40px #4aaaa5;
+  transform: scale(1.05);
+}
+
+.maincontent {
+  margin-bottom: 30px;
+}
+
+.copyright {
+  position: relative;
+  top: 15px;
+  font-size: 12px;
+  color: #ffffff
+}
+
+.form {
+  width: 95%;
+  margin: auto;
+  color: #777777;
+}
+
+.input {
+  height: 20px;
+  width: 920px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#message {
+  height: 200px;
+}
+
+#submit {
+  background-color: #4aaaa5;
+  color: #ffffff;
+  border: none;
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1.1px solid #cccccc;
+  margin-bottom: 20px;
+}
+
+textarea {
+  margin-top: 10px;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  border: 1.1px solid #cccccc;
+  padding: 5px 10px;
+  width: 97%;
+}
+
+textarea:focus { 
+  outline: none !important;
+  border-color: #4aaaa5;
+  box-shadow: 0 0 10px #4aaaa5;
+}
+
+input:focus { 
+  outline: none !important;
+  border-color: #4aaaa5;
+  box-shadow: 0 0 10px #4aaaa5;
+}
+
+@media screen and (max-width: 980px) {
+
+  .container {
+    width: 90%;
+  }
+ 
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .icondiv {
+    width: 40%;
+    height: auto;
+    margin: 15px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 640px) {
+  .container {
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+    width: 100%;
+  }
+
+/*Navbar will not show up no matter what I try here*/
+  .navbar {
+    float: none;
+    width:100%;
+    height:20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .icondiv {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+  }
+
+  .maincontent {
+    width: 90%;
+  }
+}
