@@ -1,74 +1,110 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
+<html lang="en">
 
-        <meta charset="UTF-8">
-       
-        <title>Basic Portfolio</title>
-    
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<head>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-    </head>
-    
-    <body>
+    <title>Basic Portfolio</title>
 
-            <header>
-                <div class="container">
-                    <h1>Jonah Severn</h1>
-    
-                    <ul class="navbar">
-                        
-                            <li class="navitem"><a href="contact.html">Contact</a></li>
-    
-                            <li><a href="#">|</a></li>
-    
-                            <li class="navitem"><a href="portfolio.html">Portfolio</a></li>
-    
-                            <li><a href="#">|</a></li>
-    
-                            <li class="navitem"><a href="index.html">About</a></li>
-    
-                        </ul>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+    <script src="assets/javascript/app.js"></script>
+
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <nav class="light-blue darken-3">
+        <div class="nav-wrapper light-blue darken-3">
+
+            <a href="#!" class="brand-logo">Jonah Severn</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">About</a></li>
+                <li><a href="new.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <ul class="sidenav" id="mobile-demo">
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="new.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container1">
+
+        <h2>Contact</h2>
+
+        <hr>
+        <div class="form">
+            <form id="form">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="John Smith" class="input"><br>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="example@gmail.com" class="input"><br>
+
+                <label for="message">Message</label><br>
+                <textarea rows="5"></textarea>
+
+            </form>
+
+            <button id="submit">Submit</button>
+
+        </div>
+
+
+    </div>
+
+    <div class="fillspace">
+
+    </div>
+
+    <footer class="page-footer light-blue darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Contact Me</h5>
+                    <ul>
+                        <li class="grey-text text-lighten-3">Phone: 360.643.0442</li>
+                        <li class="grey-text text-lighten-3">Email: severnj@spu.edu</li>
+                    </ul>
                 </div>
-            </header>
-
-            <div class="container maincontent">
-                
-                <h2>Contact</h2>
-
-                <hr>
-                <div class="form">
-                    <form id="form">
-                    
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="John Smith" class="input"><br>
-                    
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="example@gmail.com" class="input"><br>
-                    
-                    <label for="message">Message</label><br>
-                    <textarea rows="5"></textarea>
-                    
-                    </form>
-
-                    <button id="submit">Submit</button>
-
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">More</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://www.linkedin.com/in/jonah-severn-12243aa5/">LinkedIn</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/jsevern94">Github</a></li>
+                    </ul>
                 </div>
-                
-
             </div>
-
-            <div class="fillspace">
-
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Jonah Severn
             </div>
+        </div>
+    </footer>
 
-            <footer>
-                <div class="copyright">
-                     Copyright © 2019 Jonah Severn
-                    </div>
-            </footer>
+</body>
 
-    </body>
 </html>

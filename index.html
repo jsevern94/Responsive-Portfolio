@@ -1,60 +1,122 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
+<html lang="en">
 
-        <meta charset="UTF-8">
-       
-        <title>Basic Portfolio</title>
-    
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<head>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-    </head>
-    
-    <body>
-           
-            <header>
-                <div class="container">
-                    <h1>Jonah Severn</h1>
+    <title>Basic Portfolio</title>
 
-                    <ul class="navbar">
-                        
-                        <li class="navitem"><a href="contact.html">Contact</a></li>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-                        <li><a href="#">|</a></li>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 
-                        <li class="navitem"><a href="portfolio.html">Portfolio</a></li>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-                        <li><a href="#">|</a></li>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-                        <li class="navitem"><a href="index.html">About</a></li>
 
+
+    <script src="assets/javascript/app.js"></script>
+
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <nav class="light-blue darken-3">
+        <div class="nav-wrapper light-blue darken-3">
+
+            <a href="#!" class="brand-logo">Jonah Severn</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">About</a></li>
+                <li><a href="new.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <ul class="sidenav" id="mobile-demo">
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="new.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
-                </div>
-            </header>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-            <div class="container clearfix maincontent">
+    <div class="container">
+        <div class="row">
+            <div class="col s10 card-panel">
 
                 <h2>About Me</h2>
 
-                <hr>
-                
-                <img src="assets/images/biopic.jpeg" alt="Bio Pic" id="biopic">
+                <div class="row">
+                    <img src="assets/images/biopic.jpeg" alt="Bio Pic" id="biopic" class="col s4">
 
-                <p>To date, I have worked in various industries, from service, hospitality and tourism, to customer support, sales, and online marketing. I have a small background in html and css, as well as some experience with WordPress. I am frequently coming up with new business ideas and plan to finally start to implement them now that I am learning the skills to build webpages.</p>
+                    <p class="col s8">To date, I have worked in various industries, from service, hospitality and
+                        tourism, to customer
+                        support,
+                        sales, and online marketing. I have some background in html, css, javascript and other front and
+                        back
+                        end
+                        technologies, as well as some experience with
+                        WordPress. I am frequently coming up with new business ideas and plan to finally start to
+                        implement
+                        them
+                        now
+                        that I am learning the skills to build webpages.</p>
+                </div>
+                <div class="row">
+                    <p>In my free time, I like to read, compose and play music, play video games, and exercise. My
+                        interests
+                        range
+                        from geography, culture, and science to psychology, philosophy, and even spirituality. I'm very
+                        social,
+                        and
+                        love to meet new people, especially when games or lively discussion are involved.</p>
 
-                <p>In my free time, I like to read, compose and play music, play video games, and exercise. My interests range from geography, culture, and science to psychology, philosophy, and even spirituality. I'm very social, and love to meet new people, especially when games or lively discussion are involved.</p>
-
-                <p>I also enjoy traveling and have spent several years living abroad. I have visited 16 countries in Europe and I plan to spend some time in Asia and Oceania next.</p>
+                    <p>I also enjoy traveling and have spent several years living abroad. I have visited 16 countries in
+                        Europe
+                        and
+                        I plan to spend some time in Asia and Oceania next.</p>
+                </div>
+            </div>
+            <div class="col s12 m5">
 
             </div>
-            <br> <br> <br> <br>
-            <footer>
-                <div class="copyright">
-                     Copyright © 2019 Jonah Severn
-                    </div>
-            </footer>
+        </div>
+    </div>
+    <footer class="page-footer light-blue darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Contact Me</h5>
+                    <ul>
+                        <li class="grey-text text-lighten-3">Phone: 360.643.0442</li>
+                        <li class="grey-text text-lighten-3">Email: severnj@spu.edu</li>
+                    </ul>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">More</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://www.linkedin.com/in/jonah-severn-12243aa5/">LinkedIn</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/jsevern94">Github</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Jonah Severn
+            </div>
+        </div>
+    </footer>
 
-        </body>
-    </html>
+</body>
+
+</html>
