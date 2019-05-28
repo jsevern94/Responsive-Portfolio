@@ -29,12 +29,11 @@ main {
   float: left;
   margin: 20px;
   width: 20%;
-  margin-top: 0px;
 }
 
 p {
   font-size: 20px;
-  line-height: 2;
+  margin-top: 20px;
   margin-left: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -42,6 +41,11 @@ p {
 h2 {
   color: #0d47a1;
   font-size: 5vw;
+}
+
+.card-title {
+  background: rgba(9, 21, 241, 0.4);
+  width: 100%;
 }
 
 .card-float:hover {
@@ -84,5 +88,8 @@ h2 {
 @media (max-width: 600px) {
   .nav-wrapper .brand-logo {
     font-size: 21px;
+  }
+  .card-title {
+    font-size: 4vw !important;
   }
 }
