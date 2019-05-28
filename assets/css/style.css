@@ -33,7 +33,7 @@ main {
 }
 
 p {
-  font-size: 20fpx;
+  font-size: 20px;
   line-height: 2;
   margin-left: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -41,6 +41,7 @@ p {
 
 h2 {
   color: #0d47a1;
+  font-size: 5vw;
 }
 
 .card-float:hover {
@@ -76,3 +77,12 @@ h2 {
   margin-left: 40px;
 }
 
+.card-action a {
+  color: #0091ea !important;
+}
+
+@media (max-width: 600px) {
+  .nav-wrapper .brand-logo {
+    font-size: 21px;
+  }
+}
