@@ -2,6 +2,20 @@ nav {
   margin-bottom: 20px;
 }
 
+#mobile-demo {
+  background-image: url("../images/brickwall/brickwall.png");
+  background-repeat: repeat;
+}
+
+#biopic {
+  width: 60%;
+}
+
+.sidenav-margin {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 body {
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
@@ -23,12 +37,6 @@ main {
 
 .card-panel {
   background: rgba(255, 255, 255, 0.4) !important;
-}
-
-#biopic {
-  float: left;
-  margin: 20px;
-  width: 20%;
 }
 
 p {
